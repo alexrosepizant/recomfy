@@ -17,7 +17,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
         <Link to="/" className="block">
           <Logo size="sm" className="text-primary" />
           <h1 className="mt-2 text-xl font-bold text-primary">
-            Suggestify
+            recomfy
           </h1>
         </Link>
       </div>

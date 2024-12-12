@@ -8,8 +8,8 @@ interface UserPreferences {
   mediaTypes: MediaType[];
 }
 
-const STORAGE_KEY = 'suggestify_preferences';
-const RATINGS_KEY = 'suggestify_ratings';
+const STORAGE_KEY = 'recomfy_preferences';
+const RATINGS_KEY = 'recomfy_ratings';
 
 const defaultPreferences: UserPreferences = {
   favoriteGenres: [],

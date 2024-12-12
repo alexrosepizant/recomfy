@@ -1,8 +1,8 @@
 import { useState, useCallback } from 'react';
 import { Media } from '../../types/media';
 
-const WATCHED_KEY = 'suggestify_watched';
-const READ_KEY = 'suggestify_read';
+const WATCHED_KEY = 'recomfy_watched';
+const READ_KEY = 'recomfy_read';
 
 interface MediaStatus {
   hasWatched: boolean;

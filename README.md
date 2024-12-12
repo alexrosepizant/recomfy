@@ -1,4 +1,4 @@
-# Suggestify
+# recomfy
 
 A modern web application for discovering and tracking movies, TV shows, and books with personalized recommendations.
 
@@ -35,8 +35,8 @@ A modern web application for discovering and tracking movies, TV shows, and book
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/suggestify.git
-cd suggestify
+git clone https://github.com/yourusername/recomfy.git
+cd recomfy
 ```
 
 2. Install dependencies:

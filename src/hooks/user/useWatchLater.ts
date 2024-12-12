@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import { Media } from '../../types/media';
 
-const STORAGE_KEY = 'suggestify_watch_later';
+const STORAGE_KEY = 'recomfy_watch_later';
 
 export function useWatchLater() {
   const [watchLater, setWatchLater] = useState<Media[]>(() => {

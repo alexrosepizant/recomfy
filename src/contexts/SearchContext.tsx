@@ -4,7 +4,7 @@ import { Media, MediaType } from '../types/media';
 import { searchMedia } from '../services/api/search';
 
 const MAX_HISTORY_ITEMS = 10;
-const SEARCH_HISTORY_KEY = 'suggestify_search_history';
+const SEARCH_HISTORY_KEY = 'recomfy_search_history';
 
 interface SearchContextType {
   searchQuery: string;
