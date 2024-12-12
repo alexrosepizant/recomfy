@@ -35,7 +35,8 @@ Your all-in-one platform for discovering movies, books, and series, inspired by 
 - **API Integration**: Axios
 - **Machine Learning**: brain.js for recommendations
 - **Build Tool**: Vite
-- **Package Manager**: npm
+- **Package Manager**: yarn
+- **Typesafe API**: tRPC
 
 ## Getting Started
 
