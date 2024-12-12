@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "yarn run build"
   publish = "dist"
 
 # Redirection des routes pour une Single Page Application
@@ -9,7 +9,7 @@
   status = 200
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 
 # Ajout des headers pour les fichiers JavaScript
 [[headers]]
