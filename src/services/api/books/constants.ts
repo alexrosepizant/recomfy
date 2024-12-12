@@ -1,0 +1,23 @@
+export const GENRE_MAP: Record<string, string> = {
+  'Science Fiction': 'Sci-Fi',
+  'Fantasy': 'Fantasy',
+  'Mystery': 'Mystery',
+  'Thriller': 'Thriller',
+  'Romance': 'Romance',
+  'Horror': 'Horror',
+  'Adventure': 'Adventure',
+  'Action': 'Action',
+  'Drama': 'Drama',
+  'Comedy': 'Comedy',
+  // Add common variations
+  'Sci-Fi': 'Sci-Fi',
+  'Sci Fi': 'Sci-Fi',
+  'SF': 'Sci-Fi',
+  'Romantic': 'Romance',
+  'Mysteries': 'Mystery',
+  'Thrillers': 'Thriller',
+  'Suspense': 'Thriller',
+  'Historical': 'Drama',
+  'Contemporary': 'Drama',
+  'Literary Fiction': 'Drama',
+};
