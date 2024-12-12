@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { useDefaultMedia } from '../../hooks/useDefaultMedia';
 import { useFilterContext } from '../../contexts/FilterContext';
@@ -14,12 +14,8 @@ import { cn } from '../../utils/cn';
 export const GenreDetailPage: React.FC = () => {
   const { genre } = useParams<{ genre: string }>();
   const navigate = useNavigate();
-  const location = useLocation();
   const { trendingMedia, isLoading } = useDefaultMedia();
   const { filters } = useFilterContext();
-
-  // Preserve filter state when navigating back
-  const fromBrowse = location.state?.fromBrowse;
 
   if (!genre) {
     return null;

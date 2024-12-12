@@ -34,7 +34,7 @@ export function useMediaStatus(media: Media): MediaStatus {
   });
 
   const toggleWatched = useCallback(() => {
-    setHasWatched(prev => {
+    setHasWatched((prev: boolean) => {
       const newState = !prev;
       try {
         const watched = localStorage.getItem(WATCHED_KEY);
@@ -58,7 +58,7 @@ export function useMediaStatus(media: Media): MediaStatus {
   }, [media.id]);
 
   const toggleRead = useCallback(() => {
-    setHasRead(prev => {
+    setHasRead((prev: boolean) => {
       const newState = !prev;
       try {
         const read = localStorage.getItem(READ_KEY);

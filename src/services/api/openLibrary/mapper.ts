@@ -9,11 +9,7 @@ export function mapOpenLibraryToMedia(work: OpenLibraryWork | OpenLibrarySearchR
   
   // Extract description
   let description = '';
-  if (!isSearchResult && work.description) {
-    description = typeof work.description === 'string' 
-      ? work.description 
-      : work.description.value;
-  }
+
 
   // Extract and normalize genres from subjects
   const subjects = isSearchResult 
@@ -39,14 +35,12 @@ export function mapOpenLibraryToMedia(work: OpenLibraryWork | OpenLibrarySearchR
   
   const imageUrl = coverId 
     ? `https://covers.openlibrary.org/b/id/${coverId}-L.jpg`
-    : null;
+    : "";
 
   // Get publish year
   const year = isSearchResult
     ? (work as OpenLibrarySearchResult).first_publish_year
-    : work.first_publish_date 
-      ? parseInt(work.first_publish_date.split(',')[0])
-      : new Date().getFullYear();
+    :  new Date().getFullYear();
 
   // Normalize rating to 0-5 scale
   const rating = normalizeRating(

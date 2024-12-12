@@ -1,17 +1,9 @@
 import React from 'react';
 import { useWatchLater } from '../../hooks/user/useWatchLater';
-import { useToast } from '../../contexts/ToastContext';
 import { MediaGrid } from './MediaGrid';
-import { X } from 'lucide-react';
 
 export const WatchLaterList: React.FC = () => {
-  const { watchLater, removeFromWatchLater } = useWatchLater();
-  const { showToast } = useToast();
-
-  const handleRemove = (mediaId: string, title: string) => {
-    removeFromWatchLater(mediaId);
-    showToast(`Removed "${title}" from your watch later list`);
-  };
+  const { watchLater } = useWatchLater();
 
   if (watchLater.length === 0) {
     return (

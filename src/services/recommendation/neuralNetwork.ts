@@ -1,5 +1,5 @@
 import { NeuralNetwork } from 'brain.js';
-import { Media, UserPreferences } from '../../types/media';
+import { Media } from '../../types/media';
 
 interface TrainingData {
   input: {
@@ -14,7 +14,7 @@ interface TrainingData {
 }
 
 export class RecommendationNeuralNetwork {
-  private network: NeuralNetwork;
+  private network: NeuralNetwork<any, any>;
   private genreMap: Map<string, number>;
   private typeMap: Map<string, number>;
 

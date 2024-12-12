@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Film, Tv, Book } from 'lucide-react';
 import { cn } from '../../utils/cn';

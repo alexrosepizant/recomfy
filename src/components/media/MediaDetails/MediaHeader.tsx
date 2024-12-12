@@ -1,9 +1,8 @@
 import React from 'react';
 import { Media } from '../../../types/media';
-import { Calendar, Star } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { MediaRating } from '../../ui/MediaRating';
 import { MediaTypeIcon } from '../../ui/MediaTypeIcon';
-import { cn } from '../../../utils/cn';
 
 interface MediaHeaderProps {
   media: Media;

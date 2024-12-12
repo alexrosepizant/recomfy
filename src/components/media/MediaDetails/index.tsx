@@ -6,7 +6,6 @@ import { MediaHeader } from './MediaHeader';
 import { MediaInfo } from './MediaInfo';
 import { MediaActions } from './MediaActions';
 import { SimilarMedia } from './SimilarMedia';
-import { cn } from '../../../utils/cn';
 
 interface MediaDetailsProps {
   media: Media;

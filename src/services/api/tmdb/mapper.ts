@@ -4,7 +4,7 @@ import { getMediaImageUrl } from '../../../utils/media';
 import { formatYear } from '../../../utils/date';
 import { normalizeRating } from '../../../utils/ratings';
 
-export function mapTMDBToMedia(item: TMDBMovieResult | TMDBTVResult, type: MediaType): Media {
+export function mapTMDBToMedia(item: any | TMDBTVResult, type: MediaType): Media {
   const isMovie = type === 'movie';
   const title = isMovie ? (item as TMDBMovieResult).title : (item as TMDBTVResult).name;
   const releaseDate = isMovie 
@@ -15,7 +15,7 @@ export function mapTMDBToMedia(item: TMDBMovieResult | TMDBTVResult, type: Media
   const rating = normalizeRating(item.vote_average || 0, 'tmdb');
 
   // Map genre IDs to genre names (you'll need to implement this)
-  const genres = item.genre_ids?.map(id => getGenreName(id)) || [];
+  const genres = item.genre_ids?.map((id: number) => getGenreName(id)) || [];
 
   return {
     id: item.id.toString(),

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Media } from '../types/media';
 
 const HISTORY_KEY = 'recomfy_history';

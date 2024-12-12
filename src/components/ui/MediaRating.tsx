@@ -1,6 +1,5 @@
 import React from 'react';
 import { Star } from 'lucide-react';
-import { cn } from '../../utils/cn';
 
 interface MediaRatingProps {
   rating: number | null | undefined;

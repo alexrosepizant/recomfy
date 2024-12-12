@@ -6,7 +6,6 @@ export const HeroBanner: React.FC = () => {
   return (
     <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-800">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/images/noise.png')] opacity-10"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20"></div>
       </div>
       
