@@ -1,4 +1,6 @@
-# recomfy
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f9dc4d3-a435-41e0-a52a-8e831945ad94/deploy-status)](https://app.netlify.com/sites/recomfy/deploys)
+
+# Recomfy
 
 A modern web application for discovering and tracking movies, TV shows, and books with personalized recommendations.
 
