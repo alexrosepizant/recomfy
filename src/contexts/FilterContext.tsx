@@ -4,7 +4,7 @@ import { MediaType } from '../types/media';
 
 interface FilterContextType {
   filters: Filters;
-  setMediaType: (type: MediaType) => void;
+  setMediaType: (type: MediaType | null) => void;
   toggleGenre: (genre: string) => void;
   toggleYear: (year: string) => void;
   setRating: (rating: number | null) => void;
@@ -30,7 +30,7 @@ export function FilterProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function useFilterContext() {
+export function useFilterContext(): any {
   const context = useContext(FilterContext);
   if (!context) {
     throw new Error('useFilterContext must be used within a FilterProvider');

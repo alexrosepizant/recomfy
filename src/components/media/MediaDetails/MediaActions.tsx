@@ -39,7 +39,7 @@ export const MediaActions: React.FC<MediaActionsProps> = ({ media }) => {
       case 'book':
         return `https://www.goodreads.com/book/show/${media.externalId}`;
       default:
-        return null;
+        return undefined;
     }
   };
 

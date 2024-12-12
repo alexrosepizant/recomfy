@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 import { Media, MediaType } from '../types/media';
 import { TMDBService } from '../services/api/tmdb/service';
 import { GoogleBooksService } from '../services/api/books/service';
-import { ApiError } from '../types/api';
 
 const tmdbService = new TMDBService();
 const booksService = new GoogleBooksService();

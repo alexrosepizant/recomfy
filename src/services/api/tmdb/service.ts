@@ -32,11 +32,14 @@ export class TMDBService {
   async getTrending(type: MediaType): Promise<Media[]> {
     try {
       this.ensureInitialized();
-
       const mediaType = type === 'movie' ? 'movie' : 'tv';
-      const response = await this.client.get<TMDBSearchResponse>(
+      const response = await this.client?.get<TMDBSearchResponse>(
         `/trending/${mediaType}/week`
       );
+
+      if (!response?.data?.results) {
+        return [];
+      }
 
       return response.data.results.map(item => mapTMDBToMedia(item, type));
     } catch (error) {
@@ -51,13 +54,12 @@ export class TMDBService {
 
     try {
       this.ensureInitialized();
-
       const endpoint = type === 'movie' ? '/search/movie' : '/search/tv';
-      const response = await this.client.get<TMDBSearchResponse>(endpoint, {
+      const response = await this.client?.get<TMDBSearchResponse>(endpoint, {
         params: { query }
       });
 
-      return response.data.results.map(item => mapTMDBToMedia(item, type));
+      return response?.data?.results?.map(item => mapTMDBToMedia(item, type)) ?? [];
     } catch (error) {
       const apiError = handleTMDBError(error);
       console.error('Error searching media:', apiError);
@@ -68,11 +70,10 @@ export class TMDBService {
   async getMediaDetails(id: string, type: 'movie' | 'series'): Promise<Media | null> {
     try {
       this.ensureInitialized();
-
       const endpoint = type === 'movie' ? `/movie/${id}` : `/tv/${id}`;
-      const response = await this.client.get(endpoint);
+      const response = await this.client?.get(endpoint);
       
-      if (!response.data) {
+      if (!response?.data) {
         return null;
       }
 

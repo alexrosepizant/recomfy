@@ -1,7 +1,6 @@
 import React from 'react';
 import { useUserPreferences } from '../../hooks/user/useUserPreferences';
 import { Film, Tv, Book, Star } from 'lucide-react';
-import { cn } from '../../utils/cn';
 
 export const UserStats: React.FC = () => {
   const { ratings } = useUserPreferences();

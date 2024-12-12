@@ -5,7 +5,7 @@ import { FeatureEncoder } from '../utils/featureEncoder';
 import { normalizeScore } from '../utils/normalization';
 
 export class BrainNetworkEngine implements RecommendationEngine {
-  private network: NeuralNetwork;
+  private network: NeuralNetwork<any, any>;
   private encoder: FeatureEncoder;
   private initialized: boolean = false;
   private trainingInProgress: boolean = false;

@@ -1,3 +1,5 @@
+import { shouldRetry } from "./error-handler";
+
 const DEFAULT_RETRY_OPTIONS = {
   maxRetries: 3,
   initialDelay: 1000,

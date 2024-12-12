@@ -3,6 +3,7 @@ import { MediaType } from '../../../types/media';
 import { useMediaImage } from './useMediaImage';
 import { MediaImageFallback } from './MediaImageFallback';
 import { cn } from '../../../utils/cn';
+import { getDefaultImage } from '../../../utils/images';
 
 interface MediaImageProps {
   src: string | null;

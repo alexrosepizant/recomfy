@@ -3,8 +3,6 @@ import { useLocation } from 'react-router-dom';
 import { Header } from './Header';
 import { LeftMenu } from './LeftMenu';
 import { MediaTypeFilterBar } from '../filters/MediaTypeFilterBar';
-import { RecommendedSection } from '../sections/RecommendedSection';
-import { useDefaultMedia } from '../../hooks/useDefaultMedia';
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -17,13 +15,6 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   const isMediaDetailPage = location.pathname.startsWith('/media/');
   const isLibraryPage = location.pathname.startsWith('/library/');
   const isRecentPage = location.pathname.startsWith('/recent/');
-  const { trendingMedia, isLoading } = useDefaultMedia();
-
-  const shouldShowRecommendations = !isProfilePage && 
-                                  !isBrowsePage && 
-                                  !isMediaDetailPage && 
-                                  !isLoading && 
-                                  trendingMedia.length > 0;
 
   return (
     <div className="min-h-screen bg-background">

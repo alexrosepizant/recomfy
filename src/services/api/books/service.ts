@@ -2,7 +2,6 @@ import { Media } from '../../../types/media';
 import { BaseApiService } from '../base';
 import { mapGoogleBooksToMedia } from './mapper';
 import { GoogleBooksResponse, GoogleBooksVolume } from './types';
-import { ERROR_MESSAGES } from '../../../utils/errors/messages';
 import { withRetry } from '../retry';
 
 const GOOGLE_BOOKS_API_URL = 'https://www.googleapis.com/books/v1';
@@ -83,7 +82,7 @@ export class GoogleBooksService extends BaseApiService {
       // Process successful responses
       const books = responses
         .filter((response): response is PromiseFulfilledResult<any> => 
-          response.status === 'fulfilled' && response.value?.data?.items
+          response.status === 'fulfilled' && Boolean(response.value?.data?.items)
         )
         .flatMap(response => 
           response.value.data.items.map(mapGoogleBooksToMedia)

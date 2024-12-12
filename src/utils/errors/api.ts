@@ -12,8 +12,7 @@ export function handleApiError(error: unknown): ApiError {
     return {
       message,
       status,
-      code: error.code,
-      details: error.response?.data
+      code: error.code
     };
   }
 

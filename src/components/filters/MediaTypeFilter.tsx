@@ -14,7 +14,7 @@ export const MediaTypeFilter: React.FC = () => {
     toggleType(type);
     // Update search context to match filter selections
     const updatedTypes = filters.types.includes(type)
-      ? filters.types.filter(t => t !== type)
+      ? filters.types.filter((t: any) => t !== type)
       : [...filters.types, type];
     setSelectedTypes(updatedTypes.length > 0 ? updatedTypes : ['movie', 'series', 'book']);
   };

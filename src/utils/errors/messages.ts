@@ -21,5 +21,9 @@ export const ERROR_MESSAGES = {
 
 export function getErrorMessage(key: keyof typeof ERROR_MESSAGES, subKey?: string): string {
   const messages = ERROR_MESSAGES[key];
-  return typeof messages === 'string' ? messages : (subKey && messages[subKey]) || messages.default;
+  if (typeof messages === 'string') return messages;
+  if (subKey && subKey in messages) return messages[subKey as keyof typeof messages];
+  return 'api' in ERROR_MESSAGES && key === 'api' ? 
+    (messages as typeof ERROR_MESSAGES['api']).default : 
+    'Unknown error';
 }

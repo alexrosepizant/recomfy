@@ -1,6 +1,5 @@
 import { Media } from '../../../types/media';
 import { GoogleBooksVolume } from './types';
-import { getImageUrl } from '../../../utils/images';
 import { normalizeRating } from '../../../utils/ratings';
 import { standardizeGenre } from './utils';
 
@@ -39,7 +38,7 @@ export function mapGoogleBooksToMedia(book: GoogleBooksVolume): Media {
     releaseYear: publishYear,
     genres,
     rating: rating || 0,
-    imageUrl: volumeInfo.imageLinks?.thumbnail || null,
+    imageUrl: volumeInfo.imageLinks?.thumbnail || "",
     externalId: book.id,
   };
 }

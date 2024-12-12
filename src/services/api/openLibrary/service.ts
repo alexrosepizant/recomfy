@@ -71,7 +71,7 @@ export class OpenLibraryService extends BaseApiService {
       // Process successful responses
       const books = responses
         .filter((response): response is PromiseFulfilledResult<any> => 
-          response.status === 'fulfilled' && response.value?.data?.docs
+          response.status === 'fulfilled' && Boolean(response.value?.data?.docs)
         )
         .flatMap(response => 
           response.value.data.docs.map(mapOpenLibraryToMedia)
