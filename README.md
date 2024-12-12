@@ -54,7 +54,7 @@ cd recomfy
 
 2. Install dependencies:
 ```bash
-npm install
+yarn install
 ```
 
 3. Create a `.env` file in the root directory and add your API keys:
@@ -65,7 +65,7 @@ VITE_GOODREADS_API_KEY=your_goodreads_api_key_here
 
 4. Start the development server:
 ```bash
-npm run dev
+yarn run dev
 ```
 
 ### Environment Variables
