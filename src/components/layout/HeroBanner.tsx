@@ -14,7 +14,7 @@ export const HeroBanner: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Welcome to Suggestify
+              Welcome to recomfy
             </h1>
             <p className="text-xl text-blue-100 mb-8">
               Your personal guide to discovering amazing movies, TV shows, and books. Get tailored recommendations based on your interests.

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Media } from '../types/media';
 
-const HISTORY_KEY = 'suggestify_history';
+const HISTORY_KEY = 'recomfy_history';
 const MAX_HISTORY_ITEMS = 50;
 
 export function useMediaHistory() {

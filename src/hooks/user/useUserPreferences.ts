@@ -9,8 +9,8 @@ interface UserPreferences {
   mediaTypes: MediaType[];
 }
 
-const STORAGE_KEY = 'suggestify_preferences';
-const RATINGS_KEY = 'suggestify_ratings';
+const STORAGE_KEY = 'recomfy_preferences';
+const RATINGS_KEY = 'recomfy_ratings';
 
 const defaultPreferences: UserPreferences = {
   username: '',
@@ -21,7 +21,7 @@ const defaultPreferences: UserPreferences = {
 };
 
 // Create a global event to notify all components of preference changes
-const PREFERENCES_UPDATED_EVENT = 'suggestify:preferences-updated';
+const PREFERENCES_UPDATED_EVENT = 'recomfy:preferences-updated';
 
 export function useUserPreferences() {
   // Load saved preferences from localStorage
