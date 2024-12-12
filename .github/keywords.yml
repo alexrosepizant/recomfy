@@ -1,0 +1,76 @@
+keywords:
+  # Core Technologies
+  - react
+  - typescript
+  - tailwindcss
+  - vite
+  - brain.js
+  - neural-network
+
+  # Features
+  - recommendation-engine
+  - media-discovery
+  - personalization
+  - content-tracking
+  - watchlist
+  - reading-list
+  - user-preferences
+
+  # APIs
+  - tmdb-api
+  - google-books-api
+  - open-library-api
+  - rest-api
+
+  # UI/UX
+  - dark-mode
+  - responsive-design
+  - modern-ui
+  - tailwind-ui
+  - lucide-icons
+
+  # Development
+  - react-hooks
+  - react-context
+  - react-router
+  - typescript
+  - axios
+  - tanstack-query
+
+  # Categories
+  - movies
+  - tv-shows
+  - books
+  - entertainment
+  - media-tracker
+
+  # Machine Learning
+  - recommendations
+  - neural-networks
+  - machine-learning
+  - content-based-filtering
+  - collaborative-filtering
+
+  # Project Type
+  - web-application
+  - spa
+  - pwa
+  - media-platform
+  - content-discovery
+
+  # Features
+  - search
+  - filtering
+  - rating-system
+  - user-preferences
+  - history-tracking
+  - watchlist
+  - similar-content
+
+  # Development Practices
+  - clean-code
+  - modular-design
+  - component-based
+  - type-safety
+  - error-handling
+  - code-splitting
