@@ -6,9 +6,12 @@ A modern web application for discovering and tracking movies, TV shows, and book
 
 ![Capture d’écran du 2024-12-12 19-22-47](https://github.com/user-attachments/assets/a40bb6a7-efc4-4ac7-8c4e-ea05b867ff55)
 
+
 ![Capture d’écran du 2024-12-12 19-24-10](https://github.com/user-attachments/assets/4f23dd0b-fbd2-477f-a2f6-05f97f33fd54)
 
+
 ![Capture d’écran du 2024-12-12 19-22-59](https://github.com/user-attachments/assets/6901b145-6a1e-4fdc-86fa-21f3260ff409)
+
 
 ![Capture d’écran du 2024-12-12 19-23-07](https://github.com/user-attachments/assets/8345f3a5-c6dc-451b-9f05-32b73ffd2ca1)
 
