@@ -48,7 +48,7 @@ Your all-in-one platform for discovering movies, books, and series, inspired by 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/recomfy.git
+git clone https://github.com/alexrosepizant/recomfy.git
 cd recomfy
 ```
 
