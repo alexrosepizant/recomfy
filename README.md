@@ -2,7 +2,7 @@
 
 # Recomfy
 
-All-in-one platform for discovering movies, books, and series, inspired by Spotify. Browse, save favorites, and explore personalized recommendations tailored to your tastes.
+Brain.js platform for discovering movies, books, and series, inspired by Spotify. Browse, save favorites, and explore personalized recommendations tailored to your tastes.
 
 ![Capture d’écran du 2024-12-12 19-22-47](https://github.com/user-attachments/assets/a40bb6a7-efc4-4ac7-8c4e-ea05b867ff55)
 
